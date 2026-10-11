@@ -1,0 +1,2 @@
+import React from 'react';import{createRoot}from'react-dom/client';import{BrowserRouter}from'react-router-dom';import{AuthProvider}from'./context/AuthContext';import App from'./App';import AppErrorBoundary from'./components/AppErrorBoundary';import'./styles.css';import'./modern.css';
+createRoot(document.getElementById('root')).render(<React.StrictMode><AppErrorBoundary><BrowserRouter><AuthProvider><App/></AuthProvider></BrowserRouter></AppErrorBoundary></React.StrictMode>);
